@@ -264,20 +264,20 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 	}
 }
 
-function hello_elementor_get_theme_notifications(): ThemeNotifications {
-	static $notifications = null;
+//function hello_elementor_get_theme_notifications(): ThemeNotifications {
+//	static $notifications = null;
 
-	if ( null === $notifications ) {
-		require get_template_directory() . '/vendor/autoload.php';
+//	if ( null === $notifications ) {
+//		require get_template_directory() . '/vendor/autoload.php';
 
-		$notifications = new ThemeNotifications(
-			'hello-elementor',
-			HELLO_ELEMENTOR_VERSION,
-			'theme'
-		);
-	}
+//		$notifications = new ThemeNotifications(
+//			'hello-elementor',
+//			HELLO_ELEMENTOR_VERSION,
+//			'theme'
+//		);
+//	}
 
-	return $notifications;
-}
+//	return $notifications;
+//}
 
-hello_elementor_get_theme_notifications();
+//hello_elementor_get_theme_notifications();
