@@ -60,3 +60,14 @@ function automat_enqueue_assets() {
     }
 }
 add_action('wp_enqueue_scripts', 'automat_enqueue_assets');
+
+
+// general pages
+function enqueue_general_assets() {
+    if (is_page_template('general.php')) {
+        // Use get_stylesheet_directory_uri() for child themes
+        wp_enqueue_style('general-css', get_stylesheet_directory_uri() . '/assets/css/general.css', array(), '1.0.0');
+        wp_enqueue_script('general-js', get_stylesheet_directory_uri() . '/assets/js/general.js', array('jquery'), '1.0.0', true);
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_general_assets');

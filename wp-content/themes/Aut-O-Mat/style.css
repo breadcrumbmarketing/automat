@@ -13,7 +13,7 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 */
 
 
-/* Add your custom styles here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 body {
@@ -25,7 +25,10 @@ body {
 #4B89DC,  /* lighter blue */
 #2C3E50   /* darker blue */
 )}
+body {
+    font-family: "Messina Sans", "Segoe Ul", "Roboto", sans-serif;
 
+}
 
 H1, H2, H3, H4, H5, H6, P {
     color: white;
@@ -35,6 +38,42 @@ H1, H2, H3, H4, H5, H6, P {
     display: none !important;
 }
 
+.copyright.show {
+display: none !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Messina Sans", "Segoe Ul", "Roboto", sans-serif;
+    font-weight: normal; /* Or choose the desired font-weight */
+}
 
-/* Home */
+/* Paragraphs */
+p {
+    font-family: "Messina Sans", "Segoe Ul", "Roboto", sans-serif;
+    font-weight: normal; /* Or choose the desired font-weight */
+    line-height: 1.5; /* Adjust line height as needed */
+}
 
+/* Optional: You can also set font sizes for each heading */
+h1 {
+    font-size: 2.5rem; /* Example size for h1 */
+}
+
+h2 {
+    font-size: 2rem; /* Example size for h2 */
+}
+
+h3 {
+    font-size: 1.75rem; /* Example size for h3 */
+}
+
+h4 {
+    font-size: 1.5rem; /* Example size for h4 */
+}
+
+h5 {
+    font-size: 1.25rem; /* Example size for h5 */
+}
+
+h6 {
+    font-size: 1rem; /* Example size for h6 */
+}

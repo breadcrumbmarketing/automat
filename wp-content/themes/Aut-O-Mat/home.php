@@ -5,11 +5,22 @@
  * @package Aut-O-Mat
  */
 
-get_header(); ?>
+// Ensure Elementor compatibility
+get_header();
+?>
+
+<div class="space-home"></div>
 
 <div class="container">
-    <div class="logo">Aut-O-Mat<sup>®</sup></div>
+    <?php 
+    // Display Elementor content if available
+    while ( have_posts() ) : the_post();
+        the_content(); // This allows Elementor to load its content
+    endwhile;
+    ?>
     
+    <div class="logo">Aut-O-Mat<sup>®</sup></div>
+
     <a href="<?php echo esc_url(home_url('/automat-question/')); ?>" class="button">
         <span class="arrow">→</span> <?php esc_html_e('Neuwagen finden', 'aut-o-mat'); ?>
     </a>
