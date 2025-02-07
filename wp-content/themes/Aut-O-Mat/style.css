@@ -42,7 +42,7 @@ H1, H2, H3, H4, H5, H6, P {
 display: none !important;
 }
 .entry-title {
-    display: none;
+    display:none !important;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Messina Sans", "Segoe Ul", "Roboto", sans-serif;
