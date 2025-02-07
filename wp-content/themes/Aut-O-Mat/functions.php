@@ -80,4 +80,4 @@ function enqueue_fragen_assets() {
         wp_enqueue_script('general-js', get_stylesheet_directory_uri() . '/assets/js/fragen.js', array('jquery'), '1.0.0', true);
     }
 }
-add_action('wp_enqueue_scripts', 'enqueue_gefragen_assets');
+add_action('wp_enqueue_scripts', 'enqueue_fragen_assets');
