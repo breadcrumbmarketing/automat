@@ -41,6 +41,9 @@ H1, H2, H3, H4, H5, H6, P {
 .copyright.show {
 display: none !important;
 }
+.entry-title {
+    display: none;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Messina Sans", "Segoe Ul", "Roboto", sans-serif;
     font-weight: normal; /* Or choose the desired font-weight */
