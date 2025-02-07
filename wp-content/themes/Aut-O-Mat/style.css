@@ -77,3 +77,37 @@ h5 {
 h6 {
     font-size: 1rem; /* Example size for h6 */
 }
+
+
+/* Button Hover */
+.elementor-button {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.elementor-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -180%; /* Increased from -100% to ensure no visible part before hover */
+    width: 150%; /* Increased width to compensate for the skew */
+    height: 100%;
+    background: #000;
+    transform: skewX(-45deg);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.elementor-button:hover {
+    color: #fff;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),
+        0 6px 12px rgba(0, 0, 0, 0.1),
+        0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.elementor-button:hover:before {
+    left: -25%; /* Adjusted to ensure full coverage */
+}
